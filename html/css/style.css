@@ -159,7 +159,7 @@
     background-color: #5d5d5d;
     border: 1px solid #9e9e9e;
     padding: 20px 30px;
-    margin: 200px auto;
+    margin: 100px auto;
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -167,6 +167,29 @@
 }
 
 .login-form .logo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00bff3;
+}
+
+.login-form .login-label {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.signup-form {
+    width: 400px;
+    background-color: #5d5d5d;
+    border: 1px solid #9e9e9e;
+    padding: 20px 30px;
+    margin: 100px auto;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.signup-form .logo {
     font-size: 2em;
     margin-bottom: 20px;
     color: #00bff3;
