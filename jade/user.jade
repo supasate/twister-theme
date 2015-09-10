@@ -28,38 +28,41 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='home.html') Twister
+          a.navbar-brand(href='home.jade') Twister
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           form.navbar-form.navbar-right(role='logout')
-            input.btn.btn-default(type='button', value='Log out')
+            a.btn.btn-default(href='login.jade') Log in
+            a.btn.btn-primary(href='signup.jade') Sign up
         // /.navbar-collapse
       // /.container
     .container.body
       .left-panel
         .profile
           .header
-            .name Arnupharp Viratanapanu
-            .screen-name @topscores
+            .name Supasate Choochasri
+            .screen-name @kaizerwing
           // /.header
-          .detail.last-section
+          .detail
             .col
               .text Tweets
-              .number 327
+              .number 555
             .col
               .text Followers
-              .number 163
+              .number 236
             .col
               .text Following
-              .number 500
+              .number 877
+          .action.last-section
+            input.btn.btn-default.btn-lg(type='button', value='Follow')
           // /.detail
         // /.border-box .profile
       .main-panel
         .tweet.first-item
           .name
-            | Arnupharp Viratanapanu
+            | Supasate Choochaisri
           .screen-name
-            | @topscores
+            | @kaizerwing
           .tweet-text
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
           .action
@@ -69,9 +72,9 @@ html(lang='en')
               i.fa.fa-retweet
         .tweet
           .name
-            | Arnupharp Viratanapanu
+            | Supasate Choochaisri
           .screen-name
-            | @topscores
+            | @kaizerwing
           .tweet-text
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
           .action
@@ -81,9 +84,9 @@ html(lang='en')
               i.fa.fa-retweet
         .tweet
           .name
-            | Arnupharp Viratanapanu
+            | Supasate Choochaisri
           .screen-name
-            | @topscores
+            | @kaizerwing
           .tweet-text
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
           .action
@@ -102,7 +105,7 @@ html(lang='en')
           .modal-body
             form
               .text-area-wrapper
-                textarea.text-area(rows='4', cols='52') @topscores
+                textarea.text-area(rows='4', cols='52') @kaizerwing
               .text-right
                 input.btn.btn-default(type='submit', value='Reply')
                 input.btn.btn-danger(type='button', data-dismiss='modal', value='Close')
@@ -118,7 +121,7 @@ html(lang='en')
             form
               .text-area-wrapper
                 textarea.text-area(rows='4', cols='52')
-                  | Arnupharp Viratanapanu @topscores
+                  | Supasate Choochaisri @kaizerwing
                   | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
               .text-right
                 input.btn.btn-default(type='submit', value='Retweet')

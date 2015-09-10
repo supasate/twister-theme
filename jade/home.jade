@@ -28,19 +28,21 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='home.html') Twister
+          a.navbar-brand(href='home.jade') Twister
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           form.navbar-form.navbar-right(role='logout')
-            a.btn.btn-primary(href='login.html') Log out
+            a.btn.btn-primary(href='login.jade') Log out
         // /.navbar-collapse
       // /.container
     .container.body
       .left-panel
         .profile
           .header
-            .name Arnupharp Viratanapanu
-            .screen-name @topscores
+            a(href='me.jade')
+              .name Arnupharp Viratanapanu
+            a(href='me.jade')
+              .screen-name @topscores
           // /.header
           .detail.last-section
             .col
@@ -63,7 +65,7 @@ html(lang='en')
               .col-sm-2
                 input.btn.btn-default(type='button', value='Tweet')
         .tweet
-          a(href='profile.html')
+          a(href='user.jade')
             .name
               | Supasate Choochaisri
             .screen-name
@@ -76,7 +78,7 @@ html(lang='en')
             .retweet(data-toggle='modal', data-target='#retweetModal')
               i.fa.fa-retweet
         .tweet
-          a(href='timeline.html')
+          a(href='user.jade')
             .name
               | Arnupharp Viratanapanu
             .screen-name
@@ -89,10 +91,11 @@ html(lang='en')
             .retweet
               i.fa.fa-retweet
         .tweet
-          .name
-            | John Doe
-          .screen-name
-            | @johndoe
+          a(href='user.jade')
+            .name
+              | John Doe
+            .screen-name
+              | @johndoe
           .tweet-text
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
           .action

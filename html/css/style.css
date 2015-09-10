@@ -25,6 +25,11 @@
   -moz-border-radius-topright: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background-color: #00bff3;
+}
+
+.profile .header a {
+  color: #fff;
 }
 
 .profile .header .name {
@@ -99,7 +104,7 @@
 }
 
 .tweet a:hover .name {
-  color: #414141;
+  color: #B1B1B1;
 }
 
 .tweet .name {
@@ -195,11 +200,11 @@
     color: #00bff3;
 }
 
+.retweeted {
+  color: #b1b1b1;
+}
+
 body {
   background-color: #333333;
   color: #fff;
-}
-
-.profile .header {
-  background-color: #00bff3;
 }
