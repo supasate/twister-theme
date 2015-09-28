@@ -75,8 +75,6 @@ html(lang='en')
           .action
             .reply(data-toggle='modal', data-target='#replyModal')
               i.fa.fa-reply
-            .retweet(data-toggle='modal', data-target='#retweetModal')
-              i.fa.fa-retweet
         .tweet
           a(href='user.jade')
             .name
@@ -99,10 +97,8 @@ html(lang='en')
           .tweet-text
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
           .action
-            .reply
+            .reply(data-toggle='modal', data-target='#replyModal')
               i.fa.fa-reply
-            .retweet
-              i.fa.fa-retweet
     // Reply Modal
     #replyModal.modal.fade(aria-labelledby='replyModalLabel', tabindex='-1', role='dialog')
       .modal-dialog(role='document')
@@ -118,23 +114,7 @@ html(lang='en')
               .text-right
                 input.btn.btn-default(type='submit', value='Reply')
                 input.btn.btn-danger(type='button', data-dismiss='modal', value='Close')
-    // Retweet Modal
-    #retweetModal.modal.fade(aria-labelledby='retweetModalLabel', tabindex='-1', role='dialog')
-      .modal-dialog(role='document')
-        .modal-content
-          .modal-header
-            button.close(type='button', data-dismiss='modal', aria-label='Close')
-              span(aria-hidden='true') ×
-            h4#retweetModalLabel.modal-title Retweet
-          .modal-body
-            form
-              .text-area-wrapper
-                textarea.text-area(rows='4', cols='52')
-                  | Supasate Choochaisri @kaizerwing
-                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
-              .text-right
-                input.btn.btn-default(type='submit', value='Retweet')
-                input.btn.btn-danger(type='button', data-dismiss='modal', value='Close')
+    
     // jQuery (necessary for Bootstrap's JavaScript plugins)
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     // Include all compiled plugins (below), or include individual files as needed
