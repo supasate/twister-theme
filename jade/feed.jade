@@ -64,41 +64,42 @@ html(lang='en')
                 input#tweetText.form-control(type='text', placeholder="What's happening")
               .col-sm-2
                 input.btn.btn-default(type='button', value='Tweet')
-        .tweet
-          a(href='user.jade')
-            .name
-              | Supasate Choochaisri
-            .screen-name
-              | @kaizerwing
-          .tweet-text
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
-          .action
-            .reply(data-toggle='modal', data-target='#replyModal')
-              i.fa.fa-reply
-        .tweet
-          a(href='user.jade')
-            .name
-              | Arnupharp Viratanapanu
-            .screen-name
-              | @topscores
-          .tweet-text
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
-          .action
-            .reply
-              i.fa.fa-reply
-            .retweet
-              i.fa.fa-retweet
-        .tweet
-          a(href='user.jade')
-            .name
-              | John Doe
-            .screen-name
-              | @johndoe
-          .tweet-text
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
-          .action
-            .reply(data-toggle='modal', data-target='#replyModal')
-              i.fa.fa-reply
+        .tweet-list
+          .tweet
+            a(href='user.jade')
+              .name
+                | Supasate Choochaisri
+              .screen-name
+                | @kaizerwing
+            .tweet-text
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
+            .action
+              .reply(data-toggle='modal', data-target='#replyModal')
+                i.fa.fa-reply
+          .tweet
+            a(href='user.jade')
+              .name
+                | Arnupharp Viratanapanu
+              .screen-name
+                | @topscores
+            .tweet-text
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
+            .action
+              .reply
+                i.fa.fa-reply
+              .retweet
+                i.fa.fa-retweet
+          .tweet
+            a(href='user.jade')
+              .name
+                | John Doe
+              .screen-name
+                | @johndoe
+            .tweet-text
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
+            .action
+              .reply(data-toggle='modal', data-target='#replyModal')
+                i.fa.fa-reply
     // Reply Modal
     #replyModal.modal.fade(aria-labelledby='replyModalLabel', tabindex='-1', role='dialog')
       .modal-dialog(role='document')

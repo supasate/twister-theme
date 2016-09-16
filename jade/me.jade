@@ -55,39 +55,40 @@ html(lang='en')
           // /.detail
         // /.border-box .profile
       .main-panel
-        .tweet.first-item
-          .name
-            | Arnupharp Viratanapanu
-          .screen-name
-            | @topscores
-          .tweet-text
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
-          .action
-            .reply(data-toggle='modal', data-target='#replyModal')
-              i.fa.fa-reply
-        .tweet
-          .name
-            | Arnupharp Viratanapanu
-          .screen-name
-            | @topscores
-          .tweet-text
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
-          .action
-            .reply(data-toggle='modal', data-target='#replyModal')
-              i.fa.fa-reply
-        .tweet
-          .retweeted
-            | Arnupharp Viratanapanu retweeted
-          a(href='user.jade')
+        .tweet-list
+          .tweet.first-item
             .name
-              | Supasate Choochaisri
+              | Arnupharp Viratanapanu
             .screen-name
-              | @kaizerwing
-          .tweet-text
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
-          .action
-            .reply(data-toggle='modal', data-target='#replyModal')
-              i.fa.fa-reply
+              | @topscores
+            .tweet-text
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
+            .action
+              .reply(data-toggle='modal', data-target='#replyModal')
+                i.fa.fa-reply
+          .tweet
+            .name
+              | Arnupharp Viratanapanu
+            .screen-name
+              | @topscores
+            .tweet-text
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
+            .action
+              .reply(data-toggle='modal', data-target='#replyModal')
+                i.fa.fa-reply
+          .tweet
+            .retweeted
+              | Arnupharp Viratanapanu retweeted
+            a(href='user.jade')
+              .name
+                | Supasate Choochaisri
+              .screen-name
+                | @kaizerwing
+            .tweet-text
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id sollicitudin urna. Aenean vitae dapibus quam. Suspendisse volutpat.
+            .action
+              .reply(data-toggle='modal', data-target='#replyModal')
+                i.fa.fa-reply
     // Reply Modal
     #replyModal.modal.fade(aria-labelledby='replyModalLabel', tabindex='-1', role='dialog')
       .modal-dialog(role='document')
